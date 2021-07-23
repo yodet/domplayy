@@ -1,0 +1,45 @@
+body{
+    text-align: center;
+
+}
+body{
+    background-color:rgb(160, 92, 28) ;
+}
+#ferris{
+    outline-style: auto;
+    outline-color: pink ;
+    color:whitesmoke;
+    font-family:monospace;
+    font-size: 40px;
+    font-weight: bold;
+}
+#then{
+    font-size: large;
+    font-weight: bold;
+}
+#java{
+    outline-style: auto;
+    outline-color: pink ;
+    color:whitesmoke;
+    font-family:monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+#dom{
+    outline-style: auto;
+    outline-color: pink ;
+    color:whitesmoke;
+    font-family:monospace;
+    font-size: 33px;
+    font-weight: bold;
+}
+.photo1{
+    float:left;
+
+}
+.photo2{
+    float:right;
+}
+.foot{
+    background-color: lightblue;
+}

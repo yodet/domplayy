@@ -1,1 +1,83 @@
-<h1>DOM Play</h1>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+
+            
+    </style>
+
+</head>
+<body>
+    <h2><span id=dom>DOM PLAY</span></h2>
+    <img class="photo1" height=280px src="https://www.indiewire.com/wp-content/uploads/2013/06/ferris-buellers-day-off.jpg">
+    <img class="photo2" height=280px src="https://img.money.com/2016/05/160519_car_buellerdayoff.jpg">
+    <h4><span id=java>A JavaScript Example by Yodet W. Shigute</span></h4>
+    <h1><span id="ferris">Ferris Beuller's Day Off </span></h1>
+    <div id= "play" class=>
+    <p><span data-actor="cameron">Cameron: He knows the mileage, Ferris. He has
+        it tatooed on his wrist. </span></p>
+    <p><span data-actor="ferris">Ferris: He doesn't trust you? </span></p>
+    <p><span data-actor="cameron">Cameron: No </span></p>
+    <p><span data-actor="ferris">Ferris: Alright, look, this is real simple. Whatever miles we put on it, we'll
+        take off. </span></p>
+    <p><span data-actor="cameron">Cameron: How? </span></p>
+    <p id="then"> *Then...* </p>
+    <p><span data-actor="cameron">Cameron: Are you guys worried about nuclear war? </span></p>
+    <p><span data-actor="ferris">Ferris: Cameron, it's a beautiful day, we've
+        won our freedom, we're traveling down one of American's most scenic polluted waterways and you have to bring up nuclear war? </span></p>
+    <p><span data-actor="sloane">Sloane: It is kind of raggy subject, Cam. To answer your question...No, I'm not
+        worried about it at all. </span></p>
+    <p><span data-actor="ferris">Ferris: We don't know when the bombs going off. We do know, however, that college starts in the fall. </span></p>
+    <p><span data-actor="sloane">Sloane: My step-father's always going off about how when he was young he was committed to all these causes. He says I don't care about things like
+        he did. </span></p>
+    <p><span data-actor="ferris">Ferris: What's he care about now? </span></p>
+    <p><span data-actor="cameron">Cameron: What's spooky is they still control everything. They took over when they were young and they never gave it up. </span></p>
+    <p><span data-actor="ferris">Ferris: One of the most frightening experiences of my young life has been observing my parents and our neighbors playing the Baby Boom Edition of Trivial Pursuits. It's chilling to see people crazed with the minutia of their past. </span></p>
+    <p><span data-actor="cameron">Cameron: It's human nature to like what you had better than what you have. </span></p>
+    <p><span data-actor="sloane">Sloane: Agreed. </span></p>
+    </div>  
+    <footer>
+        <small>&copy; 2020 - 2021 <span id="copyright">Apache License 2.0</span>, All Rights Reserved ~
+        <a href="https://validator.w3.org/check/referer" target="_blank" style="color: inherit">Valid HTML</a> ~
+        <a href="https://jigsaw.w3.org/css-validator/check?uri=referer" target="_blank" style="color: inherit">Valid CSS</a>
+        </small>
+      </footer>
+    <script>
+        const spans = document.querySelectorAll('div#play span');
+
+        for(const mySpan of spans){
+            mySpan.addEventListener('click',function(ev){
+               // alert(mySpan.dataset.actor)
+               highlightActor(mySpan.dataset.actor);
+            });
+        }
+
+     
+
+        function highlightActor(myActor){
+
+            for(const mySpan of spans){
+
+            if (myActor == mySpan.dataset.actor){
+                mySpan.style.backgroundColor = 'pink' ; 
+            }else{
+                mySpan.style.backgroundColor = 'orange';
+            }
+
+
+
+
+
+            }
+
+
+
+
+
+            
+        }
+    </script>
+</body>
+</html>
